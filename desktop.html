@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LendWise Mortgage - Smarter lending powered by Odin AI">
+    <title>LendWise Mortgage</title>
+
+    <!-- Three.js for intro shader -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+
+    <link rel="stylesheet" href="css/apple-desktop.css">
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+</head>
+<body>
+    <!-- ========================================
+         INTRO ANIMATION
+         ======================================== -->
+    <div id="intro-overlay" class="intro-overlay">
+        <div class="intro-glow"></div>
+        <div class="intro-owl">
+            <video autoplay muted loop playsinline>
+                <source src="assets/videos/wisr-owl.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- ========================================
+         NAVIGATION (Apple-style black bar)
+         ======================================== -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <svg viewBox="0 0 24 24" fill="#f5f5f7">
+                    <text x="0" y="18" font-family="system-ui" font-size="18" font-weight="700">LW</text>
+                </svg>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#story" class="nav-link">Our Story</a></li>
+                <li><a href="#odin" class="nav-link">Odin AI</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#programs" class="nav-link">Loan Programs</a></li>
+                <li><a href="#faq" class="nav-link">Questions</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="https://lendwisemtg.mymortgage-online.com/borrower-app/registration/?workFlowId=223023&action=login&dest=/loan-app/&siteId=1956469515"
+                   class="btn-apple btn-apple-gold" target="_blank" rel="noopener noreferrer"
+                   style="padding: 8px 18px; font-size: 14px;">
+                    Apply Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         MAIN CONTENT
+         ======================================== -->
+    <main class="main-content">
+
+        <!-- HERO: Our Story -->
+        <section id="story" class="hero-section light">
+            <p class="hero-eyebrow fade-in">LendWise Mortgage</p>
+            <h1 class="hero-title hero-title-large fade-in">
+                Smarter<br><span class="gold">Lending.</span>
+            </h1>
+            <p class="hero-subtitle fade-in">
+                Building the future of mortgage through AI-powered technology and exceptional service.
+            </p>
+            <div class="hero-cta fade-in">
+                <a href="#odin" class="btn-apple btn-apple-primary">Meet Odin AI</a>
+                <a href="#programs" class="btn-apple btn-apple-secondary">View Programs</a>
+            </div>
+        </section>
+
+        <!-- ODIN AI Hero -->
+        <section id="odin" class="hero-section dark">
+            <p class="hero-eyebrow fade-in">Introducing</p>
+            <h1 class="hero-title fade-in">Odin AI</h1>
+            <p class="hero-subtitle fade-in">
+                Your intelligent mortgage assistant. Instant answers, smart recommendations, seamless automation.
+            </p>
+            <div class="hero-cta fade-in">
+                <a href="#" class="btn-apple btn-apple-primary">Learn more</a>
+                <a href="https://lendwisemtg.mymortgage-online.com/borrower-app/registration/?workFlowId=223023&action=login&dest=/loan-app/&siteId=1956469515"
+                   class="btn-apple btn-apple-secondary" target="_blank">Get started</a>
+            </div>
+
+            <div class="owl-container fade-in">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/videos/wisr-owl.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!-- ODIN Features Grid -->
+        <section class="section" style="background: #000; color: #f5f5f7;">
+            <div class="section-container">
+                <div class="feature-grid feature-grid-3">
+                    <div class="feature-card dark fade-in">
+                        <div class="feature-icon">⚡</div>
+                        <h3 class="feature-title">Instant Pre-Approvals</h3>
+                        <p class="feature-text">Get qualified in minutes with AI-powered underwriting.</p>
+                    </div>
+                    <div class="feature-card dark fade-in">
+                        <div class="feature-icon">💬</div>
+                        <h3 class="feature-title">24/7 Assistance</h3>
+                        <p class="feature-text">Questions at midnight? Odin is always ready to help.</p>
+                    </div>
+                    <div class="feature-card dark fade-in">
+                        <div class="feature-icon">📄</div>
+                        <h3 class="feature-title">Smart Documents</h3>
+                        <p class="feature-text">Automated analysis reduces errors and speeds processing.</p>
+                    </div>
+                    <div class="feature-card dark fade-in">
+                        <div class="feature-icon">🎯</div>
+                        <h3 class="feature-title">Perfect Matching</h3>
+                        <p class="feature-text">Find the ideal loan program for your unique situation.</p>
+                    </div>
+                    <div class="feature-card dark fade-in">
+                        <div class="feature-icon">📊</div>
+                        <h3 class="feature-title">Real-Time Tracking</h3>
+                        <p class="feature-text">Instant updates on your loan status and next steps.</p>
+                    </div>
+                    <div class="feature-card dark fade-in">
+                        <div class="feature-icon">🔒</div>
+                        <h3 class="feature-title">Compliance Built-In</h3>
+                        <p class="feature-text">Automatic regulatory checks ensure your loan is secure.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <section class="section" style="background: #1d1d1f;">
+            <div class="stats-row">
+                <div class="stat-item fade-in">
+                    <div class="stat-value">7+</div>
+                    <div class="stat-label">States Licensed</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-value">100M+</div>
+                    <div class="stat-label">Population Coverage</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-value">24/7</div>
+                    <div class="stat-label">AI Support</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-value">21</div>
+                    <div class="stat-label">Day Avg Close</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOAN PROGRAMS -->
+        <section id="programs" class="section" style="background: #fff;">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title fade-in">Loan Programs</h2>
+                    <p class="section-subtitle fade-in">Comprehensive solutions for every borrower.</p>
+                </div>
+
+                <div class="programs-grid">
+                    <div class="program-card fade-in">
+                        <div class="program-icon">🏠</div>
+                        <h3 class="program-name">Conventional</h3>
+                        <p class="program-desc">Traditional financing with competitive rates and flexible terms.</p>
+                    </div>
+                    <div class="program-card fade-in">
+                        <div class="program-icon">🏰</div>
+                        <h3 class="program-name">Jumbo</h3>
+                        <p class="program-desc">For luxury homes exceeding conventional loan limits.</p>
+                    </div>
+                    <div class="program-card fade-in">
+                        <div class="program-icon">🏛️</div>
+                        <h3 class="program-name">FHA</h3>
+                        <p class="program-desc">Government-backed loans with lower down payment options.</p>
+                    </div>
+                    <div class="program-card fade-in">
+                        <div class="program-icon">🎖️</div>
+                        <h3 class="program-name">VA</h3>
+                        <p class="program-desc">Exclusive benefits for veterans and service members.</p>
+                    </div>
+                    <div class="program-card fade-in">
+                        <div class="program-icon">📊</div>
+                        <h3 class="program-name">DSCR</h3>
+                        <p class="program-desc">Investment property loans based on rental income.</p>
+                    </div>
+                    <div class="program-card fade-in">
+                        <div class="program-icon">📋</div>
+                        <h3 class="program-name">Bank Statements</h3>
+                        <p class="program-desc">Alternative documentation for self-employed borrowers.</p>
+                    </div>
+                    <div class="program-card fade-in">
+                        <div class="program-icon">🔨</div>
+                        <h3 class="program-name">Fix and Flip</h3>
+                        <p class="program-desc">Short-term financing for property investors.</p>
+                    </div>
+                    <div class="program-card fade-in">
+                        <div class="program-icon">🔑</div>
+                        <h3 class="program-name">First Time Homebuyer</h3>
+                        <p class="program-desc">Special programs and education for new buyers.</p>
+                    </div>
+                    <div class="program-card fade-in">
+                        <div class="program-icon">💰</div>
+                        <h3 class="program-name">HELOCs</h3>
+                        <p class="program-desc">Access your home equity with flexible credit lines.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM -->
+        <section id="team" class="section" style="background: #f5f5f7;">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title fade-in">The Team</h2>
+                    <p class="section-subtitle fade-in">Industry veterans dedicated to your success.</p>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-card fade-in">
+                        <img src="assets/images/team/david-young.jpg" alt="David Young" class="team-avatar">
+                        <h3 class="team-name">David Young</h3>
+                        <p class="team-role">Founder & CEO</p>
+                    </div>
+                    <div class="team-card fade-in">
+                        <img src="assets/images/team/gady.jpg" alt="Gady Medina" class="team-avatar">
+                        <h3 class="team-name">Gady Medina</h3>
+                        <p class="team-role">Co-Founder</p>
+                    </div>
+                    <div class="team-card fade-in">
+                        <img src="assets/images/team/tony.jpg" alt="Tony Nasim" class="team-avatar">
+                        <h3 class="team-name">Tony Nasim</h3>
+                        <p class="team-role">Senior Loan Officer</p>
+                    </div>
+                    <div class="team-card fade-in">
+                        <img src="assets/images/team/alberto.jpg" alt="Alberto Martinez" class="team-avatar">
+                        <h3 class="team-name">Alberto Martinez</h3>
+                        <p class="team-role">Loan Officer</p>
+                    </div>
+                    <div class="team-card fade-in">
+                        <img src="assets/images/team/sara.jpg" alt="Sara Cohen" class="team-avatar">
+                        <h3 class="team-name">Sara Cohen</h3>
+                        <p class="team-role">Operations Manager</p>
+                    </div>
+                    <div class="team-card fade-in">
+                        <img src="assets/images/team/kailey.jpg" alt="Kailey" class="team-avatar">
+                        <h3 class="team-name">Kailey</h3>
+                        <p class="team-role">Client Relations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section" style="background: #fff;">
+            <div class="section-container" style="max-width: 700px;">
+                <div class="section-header">
+                    <h2 class="section-title fade-in">Questions?</h2>
+                    <p class="section-subtitle fade-in">Find answers to common questions.</p>
+                </div>
+
+                <div class="faq-list fade-in" style="margin-top: 40px;">
+                    <!-- FAQ items will be simple accordions -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA: Apply Now -->
+        <section class="cta-section">
+            <h2 class="cta-title fade-in">Ready to Get Started?</h2>
+            <p class="cta-subtitle fade-in">Take the first step toward your new home.</p>
+            <div class="hero-cta fade-in">
+                <a href="https://lendwisemtg.mymortgage-online.com/borrower-app/registration/?workFlowId=223023&action=login&dest=/loan-app/&siteId=1956469515"
+                   class="btn-apple btn-apple-gold" target="_blank" rel="noopener noreferrer">
+                    Apply Now
+                </a>
+                <a href="#faq" class="btn-apple btn-apple-secondary">Questions?</a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-container">
+                <p class="footer-legal">
+                    LendWise Mortgage Corporation | NMLS #2581507 | 21800 Oxnard Street, Woodland Hills, CA 91367<br>
+                    Equal Housing Lender. All loans subject to credit approval.
+                </p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Use</a>
+                    <a href="#" class="footer-link">Licensing</a>
+                    <a href="mailto:info@lendwisemtg.com" class="footer-link">Contact</a>
+                </div>
+                <p class="footer-copyright">
+                    Copyright © 2025 LendWise Mortgage Corporation. All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        // Intro animation - fade after 3 seconds
+        document.addEventListener('DOMContentLoaded', function() {
+            const intro = document.getElementById('intro-overlay');
+            const mainContent = document.querySelector('.main-content');
+
+            setTimeout(function() {
+                intro.classList.add('hidden');
+                mainContent.classList.add('visible');
+
+                // Remove intro from DOM after transition
+                setTimeout(function() {
+                    intro.remove();
+                }, 500);
+            }, 3000);
+
+            // Scroll reveal animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -50px 0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(function(el) {
+                observer.observe(el);
+            });
+
+            // Smooth scroll for nav links
+            document.querySelectorAll('.nav-link').forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').slice(1);
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 44,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

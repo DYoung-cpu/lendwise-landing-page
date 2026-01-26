@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="LendWise Mortgage - Smarter lending powered by AI.">
+    <title>LendWise Mortgage</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <link rel="stylesheet" href="css/apple-base.css">
+</head>
+<body>
+
+    <!-- Intro Animation with Three.js Shader -->
+    <div id="intro" class="intro-overlay">
+        <div id="shader-canvas"></div>
+        <div class="intro-center">
+            <div class="intro-glow"></div>
+            <div class="intro-owl">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/videos/wisr-owl.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Apple-style Navigation -->
+    <nav class="global-nav">
+        <div class="nav-content">
+            <a href="#" class="nav-logo"><span>L</span>end<span>W</span>ise</a>
+            <ul class="nav-links">
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#odin">Odin AI</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="https://lendwisemtg.mymortgage-online.com/borrower-app/registration/?workFlowId=223023&action=login&dest=/loan-app/&siteId=1956469515" class="nav-cta" target="_blank">Apply Now</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- HERO: Our Story -->
+        <section id="story" class="hero-section light">
+            <p class="headline-eyebrow fade-in">Our Story</p>
+            <h1 class="headline-super fade-in fade-in-delay-1">
+                Smarter lending.<br>
+                <span class="headline-gold">Powered by AI.</span>
+            </h1>
+            <p class="subheadline fade-in fade-in-delay-2">
+                LendWise is transforming mortgage lending with cutting-edge technology and a relentless focus on client success.
+            </p>
+            <div class="cta-group fade-in fade-in-delay-3">
+                <a href="#odin" class="btn-apple primary">Meet Odin AI</a>
+                <a href="#programs" class="btn-apple secondary">View Programs</a>
+            </div>
+        </section>
+
+        <!-- HERO: Odin AI -->
+        <section id="odin" class="hero-section dark">
+            <p class="headline-eyebrow fade-in">Introducing</p>
+            <h1 class="headline-super headline-gold fade-in fade-in-delay-1">Odin</h1>
+            <p class="subheadline fade-in fade-in-delay-2">
+                Your AI mortgage assistant. Instant answers, smart recommendations, 24/7 support.
+            </p>
+            <div class="video-showcase fade-in fade-in-delay-3">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/videos/wisr-owl.mp4" type="video/mp4">
+                </video>
+            </div>
+            <a href="#programs" class="link-arrow fade-in">See what Odin can do</a>
+        </section>
+
+        <!-- Odin Features -->
+        <section class="hero-section dark" style="min-height: auto; padding: 80px 24px;">
+            <div class="section-content wide">
+                <div class="feature-grid">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">⚡</div>
+                        <h3 class="feature-title">Instant Pre-Approvals</h3>
+                        <p class="feature-text">Get qualified in minutes, not days. AI-powered underwriting analyzes your profile instantly.</p>
+                    </div>
+                    <div class="feature-card fade-in fade-in-delay-1">
+                        <div class="feature-icon">💬</div>
+                        <h3 class="feature-title">24/7 AI Support</h3>
+                        <p class="feature-text">Questions at midnight? Odin is always ready with answers about rates, programs, and next steps.</p>
+                    </div>
+                    <div class="feature-card fade-in fade-in-delay-2">
+                        <div class="feature-icon">📄</div>
+                        <h3 class="feature-title">Smart Documents</h3>
+                        <p class="feature-text">Automated document analysis catches issues before they become problems.</p>
+                    </div>
+                    <div class="feature-card fade-in fade-in-delay-1">
+                        <div class="feature-icon">🎯</div>
+                        <h3 class="feature-title">Perfect Matching</h3>
+                        <p class="feature-text">Odin finds the ideal loan program for your unique financial situation.</p>
+                    </div>
+                    <div class="feature-card fade-in fade-in-delay-2">
+                        <div class="feature-icon">📊</div>
+                        <h3 class="feature-title">Real-Time Updates</h3>
+                        <p class="feature-text">Track your loan status and know exactly what's happening at every step.</p>
+                    </div>
+                    <div class="feature-card fade-in fade-in-delay-3">
+                        <div class="feature-icon">🔒</div>
+                        <h3 class="feature-title">Built-In Compliance</h3>
+                        <p class="feature-text">Every recommendation meets regulatory requirements automatically.</p>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="stats-row fade-in">
+                    <div class="stat-item">
+                        <div class="stat-value">7+</div>
+                        <div class="stat-label">States Licensed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">100M+</div>
+                        <div class="stat-label">Population Reach</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">24/7</div>
+                        <div class="stat-label">AI Support</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">21</div>
+                        <div class="stat-label">Day Avg Close</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HERO: Team -->
+        <section id="team" class="hero-section gray" style="min-height: auto;">
+            <div class="section-content">
+                <p class="headline-eyebrow fade-in">Leadership</p>
+                <h2 class="headline-large fade-in fade-in-delay-1">The Team</h2>
+                <p class="subheadline fade-in fade-in-delay-2">
+                    Industry veterans building the future of mortgage lending.
+                </p>
+
+                <div class="team-grid">
+                    <div class="team-member fade-in">
+                        <img src="assets/images/team/david-young.jpg" alt="David Young" class="team-photo">
+                        <h3 class="team-name">David Young</h3>
+                        <p class="team-role">Founder & CEO</p>
+                    </div>
+                    <div class="team-member fade-in fade-in-delay-1">
+                        <img src="assets/images/team/gady.jpg" alt="Gady Medina" class="team-photo">
+                        <h3 class="team-name">Gady Medina</h3>
+                        <p class="team-role">Co-Founder</p>
+                    </div>
+                    <div class="team-member fade-in fade-in-delay-2">
+                        <img src="assets/images/team/tony.jpg" alt="Tony Nasim" class="team-photo">
+                        <h3 class="team-name">Tony Nasim</h3>
+                        <p class="team-role">Senior Loan Officer</p>
+                    </div>
+                    <div class="team-member fade-in fade-in-delay-1">
+                        <img src="assets/images/team/alberto.jpg" alt="Alberto Martinez" class="team-photo">
+                        <h3 class="team-name">Alberto Martinez</h3>
+                        <p class="team-role">Loan Officer</p>
+                    </div>
+                    <div class="team-member fade-in fade-in-delay-2">
+                        <img src="assets/images/team/sara.jpg" alt="Sara Cohen" class="team-photo">
+                        <h3 class="team-name">Sara Cohen</h3>
+                        <p class="team-role">Operations</p>
+                    </div>
+                    <div class="team-member fade-in fade-in-delay-3">
+                        <img src="assets/images/team/kailey.jpg" alt="Kailey" class="team-photo">
+                        <h3 class="team-name">Kailey</h3>
+                        <p class="team-role">Client Relations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HERO: Loan Programs -->
+        <section id="programs" class="hero-section light" style="min-height: auto;">
+            <div class="section-content wide">
+                <p class="headline-eyebrow fade-in">Products</p>
+                <h2 class="headline-large fade-in fade-in-delay-1">Loan Programs</h2>
+                <p class="subheadline fade-in fade-in-delay-2">
+                    The right loan for every borrower.
+                </p>
+
+                <div class="tile-grid">
+                    <div class="tile fade-in">
+                        <div class="tile-icon">🏠</div>
+                        <h3 class="tile-title">Conventional</h3>
+                        <p class="tile-subtitle">Traditional financing with competitive rates</p>
+                    </div>
+                    <div class="tile fade-in fade-in-delay-1">
+                        <div class="tile-icon">🏰</div>
+                        <h3 class="tile-title">Jumbo</h3>
+                        <p class="tile-subtitle">For homes beyond conforming limits</p>
+                    </div>
+                    <div class="tile fade-in fade-in-delay-2">
+                        <div class="tile-icon">🏛️</div>
+                        <h3 class="tile-title">FHA</h3>
+                        <p class="tile-subtitle">Low down payment options</p>
+                    </div>
+                    <div class="tile fade-in">
+                        <div class="tile-icon">🎖️</div>
+                        <h3 class="tile-title">VA</h3>
+                        <p class="tile-subtitle">For veterans and service members</p>
+                    </div>
+                    <div class="tile fade-in fade-in-delay-1">
+                        <div class="tile-icon">📊</div>
+                        <h3 class="tile-title">DSCR</h3>
+                        <p class="tile-subtitle">Investment property loans</p>
+                    </div>
+                    <div class="tile fade-in fade-in-delay-2">
+                        <div class="tile-icon">📋</div>
+                        <h3 class="tile-title">Bank Statement</h3>
+                        <p class="tile-subtitle">Self-employed friendly</p>
+                    </div>
+                    <div class="tile fade-in">
+                        <div class="tile-icon">🔨</div>
+                        <h3 class="tile-title">Fix & Flip</h3>
+                        <p class="tile-subtitle">Short-term investor financing</p>
+                    </div>
+                    <div class="tile fade-in fade-in-delay-1">
+                        <div class="tile-icon">🔑</div>
+                        <h3 class="tile-title">First Time Buyer</h3>
+                        <p class="tile-subtitle">Special programs for new homeowners</p>
+                    </div>
+                    <div class="tile fade-in fade-in-delay-2">
+                        <div class="tile-icon">💰</div>
+                        <h3 class="tile-title">HELOCs</h3>
+                        <p class="tile-subtitle">Access your home equity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HERO: FAQ -->
+        <section id="faq" class="hero-section gray" style="min-height: auto;">
+            <div class="section-content" style="max-width: 680px;">
+                <p class="headline-eyebrow fade-in">Support</p>
+                <h2 class="headline-large fade-in fade-in-delay-1">Questions?</h2>
+
+                <div class="faq-list fade-in fade-in-delay-2" style="margin-top: 48px; text-align: left;">
+                    <details style="border-bottom: 1px solid rgba(0,0,0,0.1); padding: 20px 0;">
+                        <summary style="font-size: 19px; font-weight: 600; cursor: pointer; list-style: none;">What types of loans does LendWise offer?</summary>
+                        <p style="margin-top: 16px; color: var(--color-text-secondary); line-height: 1.5;">We offer Conventional, Jumbo, FHA, VA, DSCR, Bank Statement, Fix & Flip, First Time Homebuyer programs, and HELOCs. Our team will help you find the best fit.</p>
+                    </details>
+                    <details style="border-bottom: 1px solid rgba(0,0,0,0.1); padding: 20px 0;">
+                        <summary style="font-size: 19px; font-weight: 600; cursor: pointer; list-style: none;">How long does the loan process take?</summary>
+                        <p style="margin-top: 16px; color: var(--color-text-secondary); line-height: 1.5;">With Odin AI, qualified borrowers can close in as little as 21 days. We keep you informed every step of the way.</p>
+                    </details>
+                    <details style="border-bottom: 1px solid rgba(0,0,0,0.1); padding: 20px 0;">
+                        <summary style="font-size: 19px; font-weight: 600; cursor: pointer; list-style: none;">What is Odin AI?</summary>
+                        <p style="margin-top: 16px; color: var(--color-text-secondary); line-height: 1.5;">Odin is our AI platform that provides instant answers, document analysis, and smart recommendations to make your mortgage experience faster and smoother.</p>
+                    </details>
+                    <details style="border-bottom: 1px solid rgba(0,0,0,0.1); padding: 20px 0;">
+                        <summary style="font-size: 19px; font-weight: 600; cursor: pointer; list-style: none;">What documents do I need?</summary>
+                        <p style="margin-top: 16px; color: var(--color-text-secondary); line-height: 1.5;">Generally: pay stubs, W-2s, bank statements, tax returns, and ID. Odin will guide you through exactly what's needed for your loan type.</p>
+                    </details>
+                    <details style="padding: 20px 0;">
+                        <summary style="font-size: 19px; font-weight: 600; cursor: pointer; list-style: none;">How do I get started?</summary>
+                        <p style="margin-top: 16px; color: var(--color-text-secondary); line-height: 1.5;">Click "Apply Now" to begin your application online, or contact us and a loan officer will guide you through the process.</p>
+                    </details>
+                </div>
+
+                <div style="margin-top: 48px; text-align: center;">
+                    <a href="mailto:info@lendwisemtg.com" class="link-arrow fade-in">Contact us directly</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- HERO: Apply Now -->
+        <section class="hero-section dark">
+            <p class="headline-eyebrow fade-in">Get Started</p>
+            <h2 class="headline-super fade-in fade-in-delay-1">Ready to apply?</h2>
+            <p class="subheadline fade-in fade-in-delay-2">
+                Start your application in minutes. Our team is here to help.
+            </p>
+            <div class="cta-group fade-in fade-in-delay-3">
+                <a href="https://lendwisemtg.mymortgage-online.com/borrower-app/registration/?workFlowId=223023&action=login&dest=/loan-app/&siteId=1956469515" class="btn-apple gold large" target="_blank">Apply Now</a>
+            </div>
+            <div style="display: flex; gap: 32px; margin-top: 48px; flex-wrap: wrap; justify-content: center;" class="fade-in fade-in-delay-3">
+                <span style="color: var(--color-text-white-secondary); font-size: 14px;">🔒 Secure</span>
+                <span style="color: var(--color-text-white-secondary); font-size: 14px;">⚡ 5 Minutes</span>
+                <span style="color: var(--color-text-white-secondary); font-size: 14px;">📜 NMLS #2581507</span>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo"><span>L</span>end<span>W</span>ise</div>
+                <p class="footer-text">
+                    LendWise Mortgage Corporation | NMLS #2581507<br>
+                    21800 Oxnard Street, Woodland Hills, CA 91367<br>
+                    Equal Housing Lender
+                </p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Licensing</a>
+                    <a href="mailto:info@lendwisemtg.com">Contact</a>
+                </div>
+                <p class="footer-text">© 2025 LendWise Mortgage Corporation</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Mobile Tab Bar -->
+    <nav class="tab-bar">
+        <a href="#story" class="tab-item active">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+            </svg>
+            <span class="tab-label">Home</span>
+        </a>
+        <a href="#odin" class="tab-item">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2"/>
+            </svg>
+            <span class="tab-label">Odin</span>
+        </a>
+        <a href="#programs" class="tab-item">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+            </svg>
+            <span class="tab-label">Loans</span>
+        </a>
+        <a href="https://lendwisemtg.mymortgage-online.com/borrower-app/registration/?workFlowId=223023&action=login&dest=/loan-app/&siteId=1956469515" class="tab-item" target="_blank">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/>
+            </svg>
+            <span class="tab-label">Apply</span>
+        </a>
+    </nav>
+
+    <script>
+        // Three.js Shader Animation - Gold/Green Ripples from Owl
+        function initShaderAnimation() {
+            if (typeof THREE === 'undefined') return;
+
+            const intro = document.getElementById('intro');
+            const container = document.getElementById('shader-canvas');
+            if (!intro || !container) return;
+
+            const vertexShader = `
+                void main() {
+                    gl_Position = vec4(position, 1.0);
+                }
+            `;
+
+            const fragmentShader = `
+                precision highp float;
+                uniform vec2 resolution;
+                uniform float time;
+
+                void main(void) {
+                    vec2 uv = (gl_FragCoord.xy * 2.0 - resolution.xy) / min(resolution.x, resolution.y);
+                    float t = time * 0.03;
+                    float lineWidth = 0.002;
+
+                    vec3 goldColor = vec3(1.0, 0.84, 0.0);
+                    vec3 greenColor = vec3(0.0, 0.8, 0.2);
+
+                    float intensity = 0.0;
+                    float owlRadius = 0.13;
+
+                    for(int i=0; i < 5; i++){
+                        float rippleExpansion = fract(t + float(i)*0.01)*5.0;
+                        float adjustedLength = length(uv) - owlRadius;
+                        intensity += lineWidth*float(i*i) / abs(rippleExpansion - adjustedLength + mod(uv.x+uv.y, 0.2));
+                    }
+
+                    float fadeFactor = smoothstep(0.0, owlRadius, length(uv));
+                    intensity *= fadeFactor;
+
+                    float mixFactor = sin(uv.x * 3.0 + time * 0.1) * 0.5 + 0.5;
+                    vec3 color = mix(goldColor, greenColor, mixFactor) * intensity;
+
+                    gl_FragColor = vec4(color, 1.0);
+                }
+            `;
+
+            const camera = new THREE.Camera();
+            camera.position.z = 1;
+
+            const scene = new THREE.Scene();
+            const geometry = new THREE.PlaneGeometry(2, 2);
+
+            const uniforms = {
+                time: { type: "f", value: 1.0 },
+                resolution: { type: "v2", value: new THREE.Vector2() }
+            };
+
+            const material = new THREE.ShaderMaterial({
+                uniforms: uniforms,
+                vertexShader: vertexShader,
+                fragmentShader: fragmentShader
+            });
+
+            const mesh = new THREE.Mesh(geometry, material);
+            scene.add(mesh);
+
+            const renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+            // Insert canvas into shader container
+            container.appendChild(renderer.domElement);
+
+            function onResize() {
+                const width = intro.clientWidth;
+                const height = intro.clientHeight;
+                renderer.setSize(width, height);
+                uniforms.resolution.value.x = renderer.domElement.width;
+                uniforms.resolution.value.y = renderer.domElement.height;
+            }
+
+            onResize();
+            window.addEventListener('resize', onResize);
+
+            let animationId;
+            function animate() {
+                animationId = requestAnimationFrame(animate);
+                uniforms.time.value += 0.02;
+                renderer.render(scene, camera);
+            }
+            animate();
+
+            // Fade out after 3 seconds
+            setTimeout(() => {
+                intro.style.transition = 'opacity 0.5s ease-out';
+                intro.style.opacity = '0';
+                setTimeout(() => {
+                    cancelAnimationFrame(animationId);
+                    renderer.dispose();
+                    intro.style.display = 'none';
+                }, 500);
+            }, 3000);
+        }
+
+        // Initialize shader on load
+        document.addEventListener('DOMContentLoaded', initShaderAnimation);
+
+        // Scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Tab bar active state
+        const sections = document.querySelectorAll('section[id]');
+        const tabItems = document.querySelectorAll('.tab-item');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const top = section.offsetTop - 100;
+                if (scrollY >= top) current = section.getAttribute('id');
+            });
+            tabItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === '#' + current) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

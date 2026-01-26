@@ -1,0 +1,305 @@
+/* Mobile-Specific Overrides */
+
+/* Safe area insets for notched devices */
+@supports (padding: env(safe-area-inset-top)) {
+  .header {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .tab-bar {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .main-content {
+    padding-bottom: calc(80px + env(safe-area-inset-bottom));
+  }
+}
+
+/* Main content spacing for fixed elements */
+.main-content {
+  padding-top: 48px; /* Header height */
+  padding-bottom: 80px; /* Tab bar height */
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    padding-top: 52px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    padding-bottom: 0;
+  }
+}
+
+/* Touch targets - minimum 44px */
+.touch-target {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* Disable hover effects on touch devices */
+@media (hover: none) {
+  .card-elevated:hover {
+    transform: none;
+    box-shadow: var(--shadow-card);
+  }
+
+  .program-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .odin-feature-card:hover {
+    transform: none;
+  }
+}
+
+/* Active states for touch */
+@media (hover: none) {
+  .btn:active {
+    transform: scale(0.98);
+    opacity: 0.9;
+  }
+
+  .card-elevated:active {
+    transform: scale(0.98);
+  }
+
+  .program-card:active {
+    transform: scale(0.98);
+    border-color: var(--color-gold);
+  }
+
+  .tab-item:active {
+    opacity: 0.7;
+  }
+
+  .accordion-trigger:active {
+    background: var(--color-bg-secondary);
+  }
+}
+
+/* Improved scrolling on iOS */
+.scroll-container {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+}
+
+/* Prevent text selection on interactive elements */
+.btn,
+.tab-item,
+.program-card,
+.accordion-trigger {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Hide scrollbars on mobile but keep functionality */
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Horizontal scroll snap for carousels */
+.snap-scroll {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.snap-scroll > * {
+  scroll-snap-align: center;
+}
+
+/* Bottom tab bar active indicator */
+.tab-item::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 4px;
+  height: 4px;
+  background: var(--color-link);
+  border-radius: 50%;
+  transition: transform var(--transition-fast);
+}
+
+.tab-item.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Pull-to-refresh indicator */
+.ptr-indicator {
+  position: fixed;
+  top: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-bg);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+  z-index: var(--z-above);
+}
+
+.ptr-indicator.visible {
+  opacity: 1;
+}
+
+/* Loading skeleton */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-bg-secondary) 25%,
+    var(--color-bg-tertiary) 50%,
+    var(--color-bg-secondary) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s ease-in-out infinite;
+  border-radius: var(--radius-md);
+}
+
+@keyframes skeleton-loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Landscape orientation adjustments */
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero {
+    min-height: auto;
+    padding: var(--space-10) var(--space-6);
+  }
+
+  .hero-title {
+    font-size: var(--text-3xl);
+  }
+
+  .odin-hero {
+    min-height: auto;
+    padding: var(--space-10) var(--space-6);
+  }
+
+  .odin-owl-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .wisr-video-circle {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* Small phone adjustments (iPhone SE, etc.) */
+@media (max-width: 375px) {
+  :root {
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+  }
+
+  .hero-title {
+    font-size: var(--text-3xl);
+  }
+
+  .section-title {
+    font-size: var(--text-2xl);
+  }
+
+  .tab-label {
+    font-size: 9px;
+  }
+
+  .card-padding {
+    padding: var(--space-4);
+  }
+}
+
+/* Very small phones */
+@media (max-width: 320px) {
+  .header-inner {
+    padding: 0 var(--space-3);
+  }
+
+  .container {
+    padding: 0 var(--space-4);
+  }
+
+  .btn {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-sm);
+  }
+
+  .btn-lg {
+    padding: var(--space-3) var(--space-6);
+  }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .border-hairline {
+    border-width: 0.5px;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .stagger-children > * {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Dark mode support (if user prefers) - commented out since plan specifies light mode only */
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #000000;
+    --color-bg-secondary: #1D1D1F;
+    --color-text-primary: #F5F5F7;
+    --color-text-secondary: #A1A1A6;
+  }
+}
+*/
+
+/* Print styles */
+@media print {
+  .header,
+  .tab-bar,
+  .shader-intro {
+    display: none !important;
+  }
+
+  .main-content {
+    padding: 0 !important;
+  }
+
+  .section {
+    page-break-inside: avoid;
+  }
+}
