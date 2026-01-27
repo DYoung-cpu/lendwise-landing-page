@@ -699,7 +699,7 @@ body {
   background: #013220;
   border-radius: 9999px;
   box-shadow: 0 50px 15px #013220;
-  transition: left 0.4s ease-in-out;
+  transition: left 0.15s ease-in-out;
   z-index: 10;
 }
 
