@@ -182,7 +182,7 @@ body {
 
   /* Hero section mobile adjustments */
   .hero-section {
-    padding-top: 10px !important;
+    padding-top: 15vh !important;
     padding-bottom: 60px !important;
     min-height: auto !important;
   }
