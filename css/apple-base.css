@@ -673,20 +673,45 @@ body {
   text-decoration: underline;
 }
 
-/* Mobile Tab Bar */
+/* Mobile Tab Bar with Limelight Effect */
 .tab-bar {
   display: flex;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-top: 1px solid rgba(0,0,0,0.1);
   padding: 8px 0;
   padding-bottom: max(8px, env(safe-area-inset-bottom));
   z-index: 9998;
+}
+
+/* Limelight indicator - following original component code */
+.tab-limelight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44px;
+  height: 5px;
+  background: #013220;
+  border-radius: 9999px;
+  box-shadow: 0 50px 15px #013220;
+  transition: left 0.4s ease-in-out;
+  z-index: 10;
+}
+
+.tab-limelight-cone {
+  position: absolute;
+  left: -30%;
+  top: 5px;
+  width: 160%;
+  height: 56px;
+  background: linear-gradient(to bottom, rgba(1, 50, 32, 0.3), transparent);
+  clip-path: polygon(5% 100%, 25% 0, 75% 0, 95% 100%);
+  pointer-events: none;
 }
 
 .tab-item {
@@ -698,11 +723,17 @@ body {
   padding: 8px;
   text-decoration: none;
   color: var(--color-text-secondary);
-  transition: color 0.2s;
+  transition: color 0.2s, opacity 0.2s;
+  position: relative;
+  z-index: 20;
 }
 
 .tab-item.active {
-  color: var(--color-link);
+  color: #013220;
+}
+
+.tab-item:not(.active) {
+  opacity: 0.5;
 }
 
 .tab-icon {

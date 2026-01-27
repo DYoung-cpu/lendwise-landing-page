@@ -364,6 +364,9 @@
 
     <!-- Mobile Tab Bar -->
     <nav class="tab-bar">
+        <div class="tab-limelight">
+            <div class="tab-limelight-cone"></div>
+        </div>
         <a href="#story" class="tab-item active">
             <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
@@ -520,10 +523,28 @@
 
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-        // Tab bar active state
+        // Tab bar active state with limelight effect
         const sections = document.querySelectorAll('section[id]');
         const tabItems = document.querySelectorAll('.tab-item');
+        const limelight = document.querySelector('.tab-limelight');
 
+        function updateLimelight(activeItem) {
+            if (!limelight || !activeItem) return;
+            const itemRect = activeItem.getBoundingClientRect();
+            const tabBarRect = activeItem.parentElement.getBoundingClientRect();
+            const newLeft = itemRect.left - tabBarRect.left + (itemRect.width / 2) - (limelight.offsetWidth / 2);
+            limelight.style.left = `${newLeft}px`;
+        }
+
+        // Initialize limelight position
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeTab = document.querySelector('.tab-item.active');
+            if (activeTab) {
+                setTimeout(() => updateLimelight(activeTab), 100);
+            }
+        });
+
+        // Update on scroll
         window.addEventListener('scroll', () => {
             let current = '';
             sections.forEach(section => {
@@ -534,7 +555,17 @@
                 item.classList.remove('active');
                 if (item.getAttribute('href') === '#' + current) {
                     item.classList.add('active');
+                    updateLimelight(item);
                 }
+            });
+        });
+
+        // Update on tab click
+        tabItems.forEach(item => {
+            item.addEventListener('click', () => {
+                tabItems.forEach(t => t.classList.remove('active'));
+                item.classList.add('active');
+                updateLimelight(item);
             });
         });
     </script>
