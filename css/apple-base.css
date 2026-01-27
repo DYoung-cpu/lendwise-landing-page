@@ -189,8 +189,7 @@ body {
 
   /* Smaller headline to fit on one line */
   .headline-super {
-    font-size: 22px;
-    white-space: nowrap;
+    font-size: 18px;
   }
 }
 
