@@ -200,6 +200,54 @@ body {
     font-size: 10vw !important;
     margin-bottom: 32px !important;
   }
+
+  /* Reduce owl video size by 20% */
+  .video-showcase {
+    max-width: 80% !important;
+    margin: 0 auto;
+  }
+
+  /* Horizontal scroll carousel for Odin features */
+  .feature-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding: 0 24px 20px 24px;
+    margin: 0 -24px;
+  }
+
+  .feature-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .feature-card-scroll {
+    flex: 0 0 280px;
+    scroll-snap-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .feature-card-scroll .feature-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  .feature-card-scroll .feature-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+
+  .feature-card-scroll .feature-text {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+  }
 }
 
 @media (min-width: 834px) {
