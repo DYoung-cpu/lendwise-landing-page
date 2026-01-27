@@ -182,14 +182,15 @@ body {
 
   /* Larger eyebrow for hero section */
   .hero-eyebrow {
-    font-size: var(--text-3xl);
+    font-size: 8vw;
     font-weight: 600;
     color: var(--color-text);
+    margin-bottom: 16px;
   }
 
-  /* Smaller headline to fit on one line */
+  /* Headline size */
   .headline-super {
-    font-size: 5vw !important;
+    font-size: 6vw !important;
   }
 }
 
