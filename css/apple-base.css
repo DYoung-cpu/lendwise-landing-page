@@ -192,6 +192,15 @@ body {
   .headline-super {
     font-size: 6vw !important;
   }
+
+  /* Hero section spacing adjustments */
+  .hero-section {
+    padding-top: 60px;
+  }
+
+  .hero-section .headline-super {
+    margin-bottom: 40px;
+  }
 }
 
 @media (min-width: 834px) {
