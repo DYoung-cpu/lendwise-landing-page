@@ -179,6 +179,13 @@ body {
     font-size: 9px;
     padding: 7px 12px;
   }
+
+  /* Larger eyebrow for hero section */
+  .hero-eyebrow {
+    font-size: var(--text-3xl);
+    font-weight: 600;
+    color: var(--color-text);
+  }
 }
 
 @media (min-width: 834px) {
