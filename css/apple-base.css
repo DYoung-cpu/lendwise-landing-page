@@ -711,7 +711,7 @@ body {
   height: 5px;
   background: #228B22;
   border-radius: 9999px;
-  box-shadow: 0 50px 15px #228B22;
+  box-shadow: 0 50px 15px #FFD700;
   transition: left 0.15s ease-in-out;
   z-index: 10;
 }
@@ -722,7 +722,7 @@ body {
   top: 5px;
   width: 160%;
   height: 56px;
-  background: linear-gradient(to bottom, rgba(34, 139, 34, 0.3), transparent);
+  background: linear-gradient(to bottom, rgba(255, 215, 0, 0.3), transparent);
   clip-path: polygon(5% 100%, 25% 0, 75% 0, 95% 100%);
   pointer-events: none;
 }
