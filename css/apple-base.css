@@ -696,9 +696,9 @@ body {
   left: 0;
   width: 44px;
   height: 5px;
-  background: #013220;
+  background: #0099ff;
   border-radius: 9999px;
-  box-shadow: 0 50px 15px #013220;
+  box-shadow: 0 50px 15px #0099ff;
   transition: left 0.15s ease-in-out;
   z-index: 10;
 }
@@ -709,7 +709,7 @@ body {
   top: 5px;
   width: 160%;
   height: 56px;
-  background: linear-gradient(to bottom, rgba(1, 50, 32, 0.3), transparent);
+  background: linear-gradient(to bottom, rgba(0, 153, 255, 0.3), transparent);
   clip-path: polygon(5% 100%, 25% 0, 75% 0, 95% 100%);
   pointer-events: none;
 }
@@ -729,7 +729,7 @@ body {
 }
 
 .tab-item.active {
-  color: #013220;
+  color: #0099ff;
 }
 
 .tab-item:not(.active) {
