@@ -164,12 +164,11 @@ body {
     background: rgba(1, 50, 32, 0.95);
   }
   .nav-content {
-    justify-content: space-between;
+    justify-content: center;
   }
   .nav-logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    transform: none;
   }
   .nav-logo-img {
     height: 70px;
