@@ -150,14 +150,19 @@ body {
   background: var(--color-gold-light);
 }
 
-/* Mobile: center logo, Apply button on right */
+/* Rate Tracker button - hidden on desktop by default */
+.nav-rate-tracker {
+  display: none;
+}
+
+/* Mobile: center logo, Rate Tracker left, Apply button right */
 @media (max-width: 833px) {
   .global-nav {
     height: 72px;
     background: rgba(1, 50, 32, 0.95);
   }
   .nav-content {
-    justify-content: flex-end;
+    justify-content: space-between;
   }
   .nav-logo {
     position: absolute;
@@ -166,6 +171,17 @@ body {
   }
   .nav-logo-img {
     height: 70px;
+  }
+  .nav-rate-tracker {
+    display: inline-flex;
+    font-size: 9px;
+    font-weight: 400;
+    padding: 7px 12px;
+    background: var(--color-gold);
+    color: #000;
+    text-decoration: none;
+    border-radius: 980px;
+    transition: all 0.3s;
   }
   .nav-cta {
     font-size: 9px;
