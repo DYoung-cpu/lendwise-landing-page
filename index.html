@@ -351,8 +351,11 @@
 
     <!-- Mobile Tab Bar -->
     <nav class="tab-bar">
-        <div class="tab-limelight">
-            <div class="tab-limelight-cone"></div>
+        <div class="tab-tubelight">
+            <div class="tubelight-bar"></div>
+            <div class="tubelight-glow-1"></div>
+            <div class="tubelight-glow-2"></div>
+            <div class="tubelight-glow-3"></div>
         </div>
         <a href="#story" class="tab-item active">
             <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -513,7 +516,7 @@
         // Tab bar active state with limelight effect
         const sections = document.querySelectorAll('section[id]');
         const tabItems = document.querySelectorAll('.tab-item');
-        const limelight = document.querySelector('.tab-limelight');
+        const limelight = document.querySelector('.tab-tubelight');
 
         function updateLimelight(activeItem) {
             if (!limelight || !activeItem) return;
