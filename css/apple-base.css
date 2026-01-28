@@ -201,10 +201,10 @@ body {
     margin-bottom: 32px !important;
   }
 
-  /* Reduce owl video size by 40% total */
+  /* Match owl video size to intro (180x180) */
   .video-showcase {
-    max-width: 60% !important;
-    margin: 0 auto;
+    width: 180px !important;
+    height: 180px !important;
   }
 
   /* Horizontal scroll carousel for Odin features */
