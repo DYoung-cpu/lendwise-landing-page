@@ -758,99 +758,29 @@ body {
   z-index: 9998;
 }
 
-/* Lamp effect - overhead lighting animation */
-.tab-lamp {
+/* Limelight indicator - following original component code */
+.tab-limelight {
   position: absolute;
   top: 0;
   left: 0;
-  width: 60px;
-  height: 70px;
+  width: 44px;
+  height: 5px;
+  background: #228B22;
+  border-radius: 9999px;
+  box-shadow: 0 50px 15px #228B22;
   transition: left 0.15s ease-in-out;
   z-index: 10;
-  pointer-events: none;
-  overflow: visible;
 }
 
-.tab-lamp .lamp-gradient {
+.tab-limelight-cone {
   position: absolute;
-  top: 0;
+  left: -30%;
+  top: 5px;
+  width: 160%;
   height: 56px;
-  width: 30px;
-  animation: lamp-expand 0.8s ease-in-out forwards;
-  --conic-position: from_70deg_at_center_top;
-}
-
-.tab-lamp .lamp-left {
-  right: 50%;
-  background: conic-gradient(from 70deg at center top, #228B22, transparent, transparent);
-  mask-image: linear-gradient(to bottom, white, transparent);
-  -webkit-mask-image: linear-gradient(to bottom, white, transparent);
-}
-
-.tab-lamp .lamp-right {
-  left: 50%;
-  background: conic-gradient(from 290deg at center top, transparent, transparent, #228B22);
-  mask-image: linear-gradient(to bottom, white, transparent);
-  -webkit-mask-image: linear-gradient(to bottom, white, transparent);
-}
-
-.tab-lamp .lamp-glow-center {
-  position: absolute;
-  top: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 28px;
-  height: 36px;
-  background: #228B22;
-  opacity: 0.5;
-  border-radius: 50%;
-  filter: blur(12px);
-  animation: lamp-glow-expand 0.8s ease-in-out forwards;
-}
-
-.tab-lamp .lamp-glow-soft {
-  position: absolute;
-  top: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 16px;
-  height: 36px;
-  background: #32CD32;
-  border-radius: 50%;
-  filter: blur(8px);
-  animation: lamp-soft-expand 0.8s ease-in-out forwards;
-}
-
-.tab-lamp .lamp-line {
-  position: absolute;
-  top: -2px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 2px;
-  width: 15px;
-  background: #32CD32;
-  border-radius: 2px;
-  animation: lamp-line-expand 0.8s ease-in-out forwards;
-}
-
-@keyframes lamp-expand {
-  from { width: 15px; opacity: 0.5; }
-  to { width: 30px; opacity: 1; }
-}
-
-@keyframes lamp-glow-expand {
-  from { width: 14px; opacity: 0.3; }
-  to { width: 28px; opacity: 0.5; }
-}
-
-@keyframes lamp-soft-expand {
-  from { width: 8px; }
-  to { width: 16px; }
-}
-
-@keyframes lamp-line-expand {
-  from { width: 15px; }
-  to { width: 30px; }
+  background: linear-gradient(to bottom, rgba(34, 139, 34, 0.3), transparent);
+  clip-path: polygon(5% 100%, 25% 0, 75% 0, 95% 100%);
+  pointer-events: none;
 }
 
 .tab-item {
