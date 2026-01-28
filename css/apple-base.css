@@ -756,6 +756,7 @@ body {
   padding: 8px 0;
   padding-bottom: max(8px, env(safe-area-inset-bottom));
   z-index: 9998;
+  overflow: visible;
 }
 
 /* Tubelight indicator - matching ayushmxxn/tubelight-navbar exactly */
@@ -764,7 +765,7 @@ body {
   top: 0;
   left: 0;
   width: 44px;
-  height: 20px;
+  height: 30px;
   transition: left 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   z-index: 10;
   pointer-events: none;
@@ -773,7 +774,7 @@ body {
 /* Main bar: w-8 h-1 bg-primary rounded-t-full at -top-2 left-1/2 -translate-x-1/2 */
 .tubelight-bar {
   position: absolute;
-  top: -2px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 32px;
@@ -785,12 +786,12 @@ body {
 /* Glow 1: w-12 h-6 bg-primary/20 rounded-full blur-md -top-2 -left-2 */
 .tubelight-glow-1 {
   position: absolute;
-  top: -2px;
+  top: 4px;
   left: 50%;
   transform: translateX(-50%) translateX(-8px);
   width: 48px;
   height: 24px;
-  background: rgba(34, 139, 34, 0.2);
+  background: rgba(34, 139, 34, 0.5);
   border-radius: 9999px;
   filter: blur(12px);
 }
@@ -798,12 +799,12 @@ body {
 /* Glow 2: w-8 h-6 bg-primary/20 rounded-full blur-md -top-1 */
 .tubelight-glow-2 {
   position: absolute;
-  top: -1px;
+  top: 4px;
   left: 50%;
   transform: translateX(-50%);
   width: 32px;
   height: 24px;
-  background: rgba(34, 139, 34, 0.2);
+  background: rgba(34, 139, 34, 0.5);
   border-radius: 9999px;
   filter: blur(12px);
 }
@@ -811,12 +812,12 @@ body {
 /* Glow 3: w-4 h-4 bg-primary/20 rounded-full blur-sm top-0 left-2 */
 .tubelight-glow-3 {
   position: absolute;
-  top: 0;
+  top: 6px;
   left: 50%;
   transform: translateX(-50%) translateX(8px);
   width: 16px;
   height: 16px;
-  background: rgba(34, 139, 34, 0.2);
+  background: rgba(34, 139, 34, 0.5);
   border-radius: 9999px;
   filter: blur(4px);
 }
