@@ -201,9 +201,9 @@ body {
     margin-bottom: 32px !important;
   }
 
-  /* Reduce owl video size by 20% */
+  /* Reduce owl video size by 40% total */
   .video-showcase {
-    max-width: 80% !important;
+    max-width: 60% !important;
     margin: 0 auto;
   }
 
